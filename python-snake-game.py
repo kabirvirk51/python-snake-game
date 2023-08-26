@@ -118,7 +118,7 @@ class SnakeGame:
         self.game_window.fill(self.colors['black'])
         for pos in self.snake_body:
             pygame.draw.rect(self.game_window, self.colors['green'], pygame.Rect(pos[0], pos[1], 10, 10))
-        pygame.draw.rect(self.game_window, self.colors['white'], pygame.Rect(self.food_pos[0], self.food_pos[1], 10, 10))
+        pygame.draw.rect(self.game_window, self.colors['red'], pygame.Rect(self.food_pos[0], self.food_pos[1], 10, 10))
         self.show_score(1, self.colors['white'], 'consolas', 20)
 
     def check_game_over(self):
@@ -134,7 +134,7 @@ class SnakeGame:
     def game_over(self):
         # Handle game over screen
         my_font = pygame.font.SysFont('times new roman', 90)
-        game_over_surface = my_font.render('YOU DIED', True, self.colors['red'])
+        game_over_surface = my_font.render('GAME OVER', True, self.colors['blue'])
         game_over_rect = game_over_surface.get_rect()
         game_over_rect.midtop = (self.frame_size_x / 2, self.frame_size_y / 4)
         self.game_window.fill(self.colors['black'])
