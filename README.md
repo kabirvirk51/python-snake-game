@@ -2,9 +2,9 @@
 
 A classic Snake Game implemented in Python using the Pygame library.
 
-![Snake Game Demo](snake-game-demo.png)
+![Snake Game Demo](snake-game.png)
 
-![Snake Game End-Screen](snake-game-end-screen.png)
+![Snake Game End-Screen](snake-game-ending-screen.png)
 
 ## Description
 
